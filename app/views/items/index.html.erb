@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Items</h1>
+
+<div>
+  <%= render partial: 'items/item', collection: @items %>
+</div>
+
+<br>
+
+<%= link_to 'New Item', new_item_path %>
+
+<script>
+    $('.container').scrollPaginator({
+        items_source_url: '<%= items_path %>',
+        total_pages: <%= Item.count/(Item::PAGINATION_SIZE) %>
+    });
+</script>
