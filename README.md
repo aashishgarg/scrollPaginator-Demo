@@ -18,3 +18,7 @@
 #### Gems used
 
 * For pagination gem **kaminari** is used in the application.
+
+#### Live production url - 
+
+* Application is deployed over heroku at - https://sleepy-shore-43227.herokuapp.com/items
